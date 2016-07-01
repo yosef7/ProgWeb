@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Potato Emporium</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+</head>
+<body>
+
+	<div id="wrapper">
+		
+		<header>
+			<h1><img src="images/logo.png"></h1>
+			<nav>
+				<div id="navlink">
+					<ul>
+						<a href="index.html"><li>INICIO</li></a>
+						<a href="papa.html"><li>LA PAPA</li></a>
+						<a href="galeria.html"><li>GALERÍA</li></a>
+						<a href="contacto.html"><li>CONTACTO</li></a>
+						<a href="login.html"><li>LOGIN</li></a>
+					</ul>
+				</div>
+
+				<div id="navextra">
+					<div id="search">
+						<form>
+							<input type="text" name="search">
+							<a href=""><img src="icons/search.svg" id="lupa"></a>
+						</form>
+					</div>
+					<div id="cart">
+						<a href=""><img src="icons/cart.svg" id="cart"></a>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<div class="main">
+			<div class="mySlides">
+				<a href="papa.html"><img src="images/potato-bowl.jpg">
+					<div class="text">
+						<p>¿Sabías que la papa<br>no es sólo para comer?</p>
+					</div>
+				</a>
+			</div>
+
+			<div class="mySlides">
+				<a href="signup.html"><img src="images/join.jpg">
+					<div class="text">
+						<p>¿No eres un miembro?<br>¡Únete ya!</p>
+					</div>
+				</a>
+				</div>
+
+			<div class="mySlides">
+				<a href="galeria.html"><img src="images/different-potatoes.jpg">
+					<div class="text">
+						<p>Échale un vistazo a<br>nuestra selección de papas</p>
+					</div>
+				</a>
+				</div>
+
+				<a class="slideshow-btn-left" onclick="plusDivs(-1)"><img src="icons/arrow-left.svg"></a>
+				<a class="slideshow-btn-right" onclick="plusDivs(+1)"><img src="icons/arrow-right.svg"></a>
+		</div>
+
+		<footer>
+			<div id="social">
+				<a href="https://www.facebook.com/vpastrano24" target="_blank"><img src="icons/facebook.svg" alt="Facebook"></a>
+				<a href="https://www.youtube.com/channel/UCcTV5N4-_gtzNMrmoQmooRQ" target="_blank"><img src="icons/youtube.svg" alt="YouTube"></a>
+				<a href="https://www.pinterest.com/pin/537617274245614243/" target="_blank"><img src="icons/pinterest.svg" alt="Pinterest"></a>
+				<a href="https://www.instagram.com/vanepastrano/" target="_blank"><img src="icons/instagram.svg" alt="Instagram"></a>
+			</div>
+			<div id="top">
+				<button>
+					<a href="#">
+						Back to top
+						<img src="icons/arrow-up.svg">
+					</a>
+				</button>
+			</div>
+			
+		</footer>
+
+		<div id="copyright">
+				<p>Copyright © 2016, Potato Emporium</p>
+		</div>
+
+	</div>
+
+
+
+
+
+
+
+<script>
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs (n) {
+	showDivs(slideIndex += n);
+}
+
+function showDivs (n) {
+	var i;
+	var x = document.getElementsByClassName("mySlides");
+	if (n > x.length) {slideIndex = 1}
+	if (n < 1) {slideIndex = x.length};
+	for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";
+	}
+	x[slideIndex-1].style.display = "block"
+}
+
+</script>
+
+
+</body>
+</html>

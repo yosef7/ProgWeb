@@ -2,44 +2,47 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>sumar</title>
+<title>Problem #03</title>
 </head>
 <body>
 
 <script type="text/javascript">
   var v;
   var s=0;
-  
-  do {
-    v=prompt('Ingrese un valor (9999 para finalizar)','');
-    v=parseInt(v);
-    if (v!=9999)
+  do
     {
-      suma=suma+v;
+      v=prompt('Ingrese un valor: (Al ingresar 9999 finaliza.)','');
+      v=parseInt(v);
+      if (v!=9999)
+        {
+          s=s+v;
+        }
     }
-  } while(v!=9999);
-  document.write('Valor acumulado total:'+suma);
-  document.write('<br>');
-  
-  
-  
-  
-  if (suma>0)
-  {
-    document.write('El valor acumulado es mayor a cero.');
-  }
-  else
-  {
-    if (suma==0)
-    {
-      document.write('El valor acumulado es cero.');
-    }
-    else
-    {
-      document.write('El valor acumulado es menor a cero.');
-    }
-  }
-</script>
+  while(v!=9999);
+    document.write('Valor acumulado total es: '+s);
+    document.write('<br>');
 
+    if (s>0)
+      {
+        document.write('El valor acumulado es mayor a cero.');
+      }
+    else 
+      {
+    if (s==0)
+      {
+        document.write('El valor acumulado es cero.');
+      }
+    else
+      {
+        document.write('El valor acumulado es menor a cero.');
+      }
+      }
+
+</script>
 </body>
 </html>
+
+<!Realizar un programa que acumule (sume) valores ingresados por teclado 
+hasta ingresar el 9999 (no sumar dicho valor, solamente indica que ha 
+finalizado la carga). Imprimir el valor acumulado e informar si dicho 
+valor es cero, mayor a cero o menor a cero.>

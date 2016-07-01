@@ -1,0 +1,45 @@
+<! Un vector es una estructura de datos que permite almacenar un CONJUNTO de datos.
+Con un único nombre se define un vector y por medio de un subíndice hacemos referencia a cada elemento del mismo (componente).
+
+Ejemplo 1: Crear un vector para almacenar los cinco sueldos de operarios y luego mostrar el total de gastos en sueldos (cada actividad en una función). //>
+<html>
+<head>
+</head>
+<body>
+
+<script type="text/javascript">
+  function cargar(sueldos)
+  {
+    var f;
+    for(f=0;f<sueldos.length;f++)
+    {
+      var v;
+      v=prompt('Ingrese sueldo:','');
+      sueldos[f]=parseInt(v); 
+    }
+  }
+
+  function calcularGastos(sueldos)
+  {
+    var total=0;
+    var f;
+    for(f=0;f<sueldos.length;f++)
+    {
+      total=total+sueldos[f];
+    }
+    document.write('Listado de sueldos<br>');
+    for(f=0;f<sueldos.length;f++)
+    {
+      document.write(sueldos[f]+'<br>');
+    } 
+    document.write('Total de gastos en sueldos:'+total); 
+  }
+
+  var sueldos;
+  sueldos=new Array(5);
+  cargar(sueldos);
+  calcularGastos(sueldos);
+</script>
+
+</body>
+</html>

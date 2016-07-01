@@ -1,0 +1,131 @@
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+
+#wrapper {
+	width: 1700px;
+	margin: 0 auto;
+}
+
+/*Tener cuidado con la UBICACIÓN del archivo y el NOMBRE del mismo*/
+/*Usar JPG o PNG-24 para imagenes with a lot going on y GIF o PNG-8 para lo contrario*/
+header {
+	background-image: url(../images/cafe-web.png);
+	background-size: cover;
+	width: 100%;
+	height: 500px;
+	position: relative;
+}
+
+/*Tuve que especificar mas la etiqueta para que el margin funcionara*/
+/*Aparentemente, el property 'top' hace lo mismo que el 'margin-top',
+pero no afecta los elementos alrededor*/
+header img {
+	top: 120px;
+	width: 35%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	position: relative;
+}
+
+nav {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+ul {
+	background-color: #2b1111;
+	list-style-type: none;
+	margin: 0 auto;
+	text-align: center;
+
+}
+/*Otra vez tuve que especificar mas para que funcionara*/
+header ul li {
+	display: inline-block;
+	text-align: center;
+	padding: 16px 20px;
+	font font-size: 25px;
+	font-family: 'Droid Sans', sans-serif;
+	font-size: 20px;
+}
+
+nav li a {
+	color: white;
+	text-decoration: none;
+	font-size: 1.2em;
+}
+
+a:hover {
+	background-color: #b07a68;
+	color: #2b1111;
+	border: 13px solid #b07a68;
+}
+
+article:nth-child(1) {
+	display: inline-block;
+	width: 520px; height: 100%;
+	margin-right: 35px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: 200px;
+	float: left;
+}
+
+article:nth-child(2) {
+	display: inline-block;
+	width: 520px; height: 100%;
+	margin-right: 200px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: 35px;
+	float: right;
+}
+
+h2 {
+	font-family: 'Droid Sans', sans-serif;
+	font-size: 30px;
+	color: #2b1111;
+	text-align: left;
+}
+
+article h2 {
+	font-family: 'Droid Sans', sans-serif;
+	font-size: 40px;
+	color: #2b1111;
+	text-align: left;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+p{
+	font-family: 'Droid Sans', sans-serif;
+	text-align: left;
+	color: #2b1111;
+}
+
+article p {
+	font-family: 'Droid Sans', sans-serif;
+	text-align: left;
+	color: #2b1111;
+	line-height: 1.5;
+	margin-bottom: 15px;
+	font-size: 17px;
+}
+
+footer {
+	background-color: #2b1111;
+	list-style-type: none;
+	margin: 0 auto;
+	clear: both;
+}
+
+footer p {
+	color: white;
+	font-family: 'Droid Sans', sans-serif;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 30px;
+}

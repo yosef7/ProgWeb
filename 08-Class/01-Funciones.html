@@ -1,0 +1,46 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Problema # 01</title>
+</head>
+<body>
+
+<script type="text/javascript">
+// 1. Confeccionar una función a la cual le envíe tres enteros y retorne el mayor de ellos.
+
+  function num_mayor(v1,v2,v3)
+  {
+    if (v1>v2 && v1>v3)
+    {
+      return v1;
+    }
+    else
+    {
+      if (v2>v3)
+      {
+        return v2;
+      }
+      else
+      {
+        return v3;
+      }
+    }
+  }
+
+  var var1,var2,var3;
+  var1=prompt('Ingrese el primer valor:','');
+  var1=parseInt(var1);
+  var2=prompt('Ingrese el segundo valor:','');
+  var2=parseInt(var2);
+  var3=prompt('Ingrese el tercer valor:','');
+  var3=parseInt(var3);
+  document.write('Los valores ingresados son: '+var1+', '+var2+', '+var3+'.<br>'); 
+  var may;
+  may=num_mayor(var1,var2,var3);
+  document.write('El mayor de los tres es: '+may);
+
+</script>
+
+</body>
+</html>
+     
