@@ -1,0 +1,29 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Problema # 04</title>
+</head>
+<body>
+<script type="text/javascript">
+// 4. Elaborar una función que reciba tres enteros y retorne el promedio.
+function prom(n1,n2,n3)
+{
+    var prom=(n1+n2+n3)/3;
+    return prom;
+}
+
+var n1,n2,n3;
+n1=prompt('Ingrese el primer número: ','');
+n1=parseInt(n1);
+n2=prompt('Ingrese el segundo número:','');
+n2=parseInt(n2);
+n3=prompt('Ingrese el tercer número:','');
+n3=parseInt(n3);
+
+var pro;
+pro=prom(n1,n2,n3);
+document.write('El promedio de los 3 números ingresados es: '+pro);
+
+</script>
+</body>
+</html>

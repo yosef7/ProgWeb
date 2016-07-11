@@ -1,0 +1,64 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Problema # 02</title>
+</head>
+<body>
+<script type="text/javascript">
+// Realizar un programa que pida la carga de dos vectores numéricos. 
+// -Obtener la suma de los dos vectores, 
+// dicho resultado guardarlo en un tercer vector del mismo tamaño. 
+// -Sumar componente a componente.
+// -El tamaño del vector es a elección.
+function cargarVectores(vec1,vec2)
+  {
+    var f;
+    for(f=0;f<vec1.length;f++)
+    {
+      var valor;
+      valor=prompt('Ingrese componente del primer vector:','');
+      vec1[f]=parseInt(valor);
+    }
+    for(f=0;f<vec2.length;f++)
+    {
+      var valor;
+      valor=prompt('Ingrese componente del segundo vector:','');
+      vec2[f]=parseInt(valor);
+    }
+  }
+
+  function sumarVectores(vec1,vec2,vecsuma)
+  {
+    var f;
+    for(f=0;f<vecsuma.length;f++) 
+    {
+      vecsuma[f]=vec1[f]+vec2[f];
+    }
+  }
+
+  function imprimirVector(vecsuma)
+  {
+    var f;
+    for(f=0;f<vecsuma.length;f++)
+    {
+      document.write(vecsuma[f]+' ');
+    }
+  }
+
+  var vec1;
+  vec1=new Array(5);
+  var vec2;
+  vec2=new Array(5);
+  var vecsuma;
+  vecsuma=new Array(5);
+  cargarVectores(vec1,vec2);
+  sumarVectores(vec1,vec2,vecsuma);
+  imprimirVector(vecsuma);
+
+
+
+</script>
+</body>
+</html>
+
+

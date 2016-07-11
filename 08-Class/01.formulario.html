@@ -1,0 +1,27 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Problema # 01</title>
+</head>
+<body>
+
+<script type="text/javascript">
+// Crear un programa que permita cargar un entero en un text y 
+// al presionar un botón nos muestre dicho valor elevado al cubo (emplear la función alert).
+  function CalC()
+  {
+    var v=document.getElementById('n').value
+    v=parseInt(v);
+    var cb=v*v*v;
+    alert(cb);
+  }
+</script>
+
+<form>
+Ingrese un valor:
+<input type="text" id="n"><br>
+<input type="button" value="Calcule el cubo" onclick="CalC()">
+</form>
+
+</body>
+</html>

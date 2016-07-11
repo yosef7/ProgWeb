@@ -1,0 +1,28 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Problema # 05</title>
+</head>
+<body>
+<script type="text/javascript">
+//5. Confeccionar una función que solicite la carga de cinco valores por teclado y retorne su suma.
+function c5n()
+{
+    var sm=0;
+    var v;
+    var f;
+    for (f=1;f<=5;f++)
+    {
+        v=prompt('Ingrese 5 número: (uno a la vez)','');
+        v=parseInt(v);
+        sm=sm+v;
+    }
+    return sm;
+}
+
+var s=c5n();
+document.write('La suma de los cinco valores es: '+ s);
+
+</script>
+</body>
+</html>
