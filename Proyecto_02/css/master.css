@@ -1,0 +1,79 @@
+/*CSS*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  width: 30%;
+  height: 100px;
+  margin: 10px;
+  padding: 30px 5px;
+  background: #fff;
+}
+
+body {
+  background: url(../img/collage_1.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+/*cajas, diseño adaptable varios dispositivos*/
+header, .main, footer{
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+}
+/*color del fondo del menu, acomodar menu*/
+header nav {
+  background: #528FD5;
+  overflow: hidden;
+}
+/*quitar los puntos del menu*/
+header nav ul {
+  list-style: none;
+}
+/*colocar texto del menu a la izquierda*/
+header nav ul li{
+  float: left;
+}
+/*modificar enlaces del menu, quitar subrayado*/
+header nav ul li a {
+  padding: 10px 20px;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+/*cambiar el fondo al pasar mouse*/
+header nav ul li a:hover {
+  background: #75ACEC;
+}
+
+.main .articles {
+  width: 68.5%;
+  margin-right: 1.5%;
+  float: left;
+}
+
+.main .articles article {
+  padding: 20px;
+  background: #fff;
+  margin-bottom: 20px;
+}
+
+aside {
+  width: 30%;
+  background: #ff8000;
+  float:left;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+footer {
+  background: #000;
+  color: #fff;
+  clear: both;
+  padding: 10px 0px;
+  text-align: center;
+}
