@@ -1,32 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!---->
     <meta charset="utf-8">
-    <link rel="shortcut icon" href="img/crown.ico"> <!--coloca icono-->
     <title>Matricula KinG's</title>
+    <!--coloca icono-->
+    <link rel="shortcut icon" href="../img/crown.ico">
     <!--Estilos css-->
     <link rel="stylesheet" type="text/css" href="../css/master.css">
-    <!--Permite posicionar tu web en google-->
-    <meta name="descripcion" content="La mejor escuela de Panama,
-    mejores profesores, mejores instalaciones,">
-    <!--añadir javascript-->
-    <script src="js/uno.js" charset="utf-8"></script>
-    <script type="text/javascript"></script>
+    <!--Estilos css Formulario-->
+    <link rel="stylesheet" type="text/css" href="../css/form.css">
   </head>
   <body>
 
     <header>
       <!--Logo-->
       <div class="logotipo">
-        <img src="../img/kc.png" width="300" alt="Logo de King's College"
-        title="Logo de King's College"/>
+        <img src="../img/kc.png" width="300" alt="Logo KinG's"
+        href="index.html" title="Logo de King's College"/>
       </div>
        <!--MENU-->
       <nav>
         <ul>
           <li><a href="../index.html">Inicio</a></li>
-          <li><a href="#">Conoce</a></li>
+          <li><a href="01_con.html">Conoce</a></li>
           <li><a href="02_matri.html">Matricula</a></li>
           <li><a href="#">Calendario</a></li>
           <li><a href="http://bseducativo.com" target="_blank"> I-MEREB</a></li>
@@ -37,23 +33,58 @@
       </nav>
     </header>
 
-    <section class="main">
-    <!--  <section class="articles">-->
-        <!--Primer Parrafo-->
-        <article>
-          <h2>Primer Parrafo</h2>
+    <!--<section class="main">-->
+      <section class="main">
+        <section class="articles">
 
-            <!--FORMULARIO-->
-            <form action="accion.php" method="post">
-             <p>Su Nombre: <input type="text" name="nombre" /></p>
-             <p>Su Apellido: <input type="text" name="apellido" /></p>
-             <p>Su Edad: <input type="text" name="edad" /></p>
-             <p><input type="submit" /></p>
-            </form>
+          <!--Formulario-->
+          <article>
+          <h2 style="text-align:center">Formulario Pre-Matricula</h2><br>
+            <p style="font-family: Georgia;">
+              Se asignara el salón de acuerdo a la información que ingrese.
+              <br><br>
 
-        </article>
+              <form id="formulario" action="/var/www/html/Proyecto_02/form0.php" method="post">
+                <!--añaden campos obligatorios, marcadores,-->
+                <label for="name">Ingrese su nombre:</label>
+                <input type="text" placeholder="Pablo" id="name" required>
+                <label for="lastname">Ingrese su apellido:</label>
+                <input type="text" placeholder="Perez" id="lastname" required>
+                <!--ingresa edad desde 12 a 18 años-->
+                <label for="edad">Ingrese su edad:</label>
+                <input type="number" min="12" max="18" step="1" placeholder="12-18" id="edad">
+                <label for="correo">Ingrese su correo:</label>
+                <input type="email" placeholder="pperez@gmail.com" id="email" required>
 
+                <input type="submit" />
 
+              </form>
+
+            </p>
+          </article>
+
+          <!--Segundo Parrafo-->
+          <article>
+            <h2>Segundo Parrafo</h2>
+            <p style="font-family: Georgia;">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </article>
+        </section>
+
+        <aside>
+          <h3>Este es el Sidebar</h3>
+          <p style="font-family: Georgia;">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor Muincididunt ut labore et dolore magna aliqua.
+            <br><br> Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute
+            irure dolor in reprehenderit in voluptate velit esse cillum
+            dolore eu fugiat nulla pariatur.
+          </p>
+        </aside>
+      </section>
 
     <!--Pie de Pagina-->
     <footer>
@@ -61,7 +92,7 @@
        Copyright © 2016 Derechos Reservados King's College Panamá.
      </p>
     </footer>
-
+    <!---->
 
     <!---->
   </body>
