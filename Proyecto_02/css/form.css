@@ -1,11 +1,11 @@
-form {
+form, formu {
     width: 400px;
     font: normal bold 12px, Arial, Georgia;
 }
 
 form label {
     display: inline-block;
-    width: 150px;
+    width: 140px;
 }
 
 form input {
