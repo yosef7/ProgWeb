@@ -2,7 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Número 2</title>
+    <title>Problema 2</title>
+
     <!--2. Diseñe un programa JavaScript  que dados el sexo, peso, edad, nombre
     y estatura de un grupo de 30 alumnos, muestre los siguientes datos:
 
@@ -10,34 +11,47 @@
     -Listado de Niñas que están aptas para jugar Basquetbol
 
     Los requisitos para ello, son los siguientes:
-
-    Los niños una estatura mayor de 1.70 mts y pesar más de 150 lbs.
-    Las niñas una estatura mayor de 1.60 mts y pesar más de 145 lbs.
-
-    var datos = ["nombre", "estatura", "peso", "edad", "sexo",]
-    document.write(datos[1]);
-  -->
-
-</head>
-<body>
+    1. Los niños una estatura mayor de 1.70 mts y pesar más de 150 lbs.
+    2. Las niñas una estatura mayor de 1.60 mts y pesar más de 145 lbs.
+    -->
+  </head>
+  <body>
     <script type="text/javascript">
 
-    var nom = prompt('Ingrese el nombre del estudiante.');
-    document.write("Su nombre es= "+ nom".");
+    document.write ("De un grupo de 30 niñ@s cuantos son aptos para jugar basketball.")
+    alert(document.title);
+    window.alert ("Preste atención a los datos solicitados.");
 
-    var sx = prompt('Ingrese el sexo del estudiante [Masculino, Femenino]');
-    document.write("Su sexo es= "+ sx".");
+    var nom, ed, sx, st, ps, k=1;
+    var ninos=0, ninoap=0, ninas=0, ninaap=0;
 
-    var ps = prompt('Ingrese el peso, en libras');
-    document.write("Su peso en libras es= "+ ps".");
+    for (var i = 1; i <=30; i++);
+      {
+        nom = prompt('Ingrese el nombre del estudiante','');
+        //document.write("Su nombre es "+nom);
+        ed = prompt('Ingrese la edad del estudiante','');
+        //document.write("Su nombre es "+ed);
+        sx = prompt('Introduzca el numero 1 si es niño, ó 2 si es una niña=');
+        //document.write("Escogio el numero"+sx)
+        st = prompt('Ingrese la estatura (en metros) del estudiante','');
+        //document.write("Su nombre es "+ed);
+        ps = prompt('Ingrese el peso (en libras) del estudiante','');
+        //document.write("Su nombre es "+ed);
 
-    var est = prompt('Ingrese el estatura, en metros');
-    document.write("Su estatura en metros es= "+ est".");
-
-
-
-
+        if ((sx==1)&&(st>=170)&&(ps>=150)) {
+          ninos=ninos+1;
+        } else {
+          ninoap=ninoap+1;
+        }
+        if ((sx==2)&&(st>=160)&&(ps>=145)){
+          ninas=ninas+1;
+        } else {
+          ninaap=ninaap+1;
+        }
+        document.writeln ("La cantidad de niños aptos es de="+ninos);
+        document.writeln ("La cantidad de niñas aptas es de="+ninas);
+      }
 
     </script>
-</body>
+  </body>
 </html>
